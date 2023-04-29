@@ -6,14 +6,12 @@ public class InputManager : MonoBehaviour
 {
     [SerializeField] private CannonSO cannonSo;
     
-    
-    void Start()
+    void Update()
     {
-        
+        if (cannonSo != null) CannonInput();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CannonInput()
     {
         float _mouseX = Input.GetAxis("Mouse X");
         float _mouseY = Input.GetAxis("Mouse Y");

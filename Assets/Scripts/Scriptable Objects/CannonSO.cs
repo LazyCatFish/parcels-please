@@ -52,8 +52,6 @@ public class CannonSO : ScriptableObject
     public void MouseInput(Vector2 mouseInput)
     {
         var indicatorDirection = getIndicatorDirection();
-        // Debug.Log("Indicator Dir: x : " + indicatorDirection.x + " || y : " + indicatorDirection.y);
-        // Debug.Log("Mouse Dir:     x : " + mouseInput.x + " || y : " + mouseInput.y);
 
         var powerIncrease = Vector2.Dot(mouseInput, indicatorDirection);
         AddPower(powerIncrease * powerSensitivity);

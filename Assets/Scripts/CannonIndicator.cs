@@ -5,9 +5,7 @@ using UnityEngine;
 public class CannonIndicator : MonoBehaviour
 {
     [SerializeField] private CannonSO cannonSo;
-
     [SerializeField] private GameObject valueBar;
-    
 
     void Update()
     {
