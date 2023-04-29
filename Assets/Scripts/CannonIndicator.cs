@@ -11,7 +11,7 @@ public class CannonIndicator : MonoBehaviour
 
     void Update()
     {
-        var power = cannonSo.getPower();
+        var power = cannonSo.GetPower();
         valueBar.transform.localScale = new Vector3(1, power, 1);
 
     }
