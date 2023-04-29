@@ -16,11 +16,12 @@ public class CannonController : MonoBehaviour
 
     void Update()
     {
-        
+        updateBarrelRotation();
     }
 
-    private void UpdatePowerIndicator()
+    private void updateBarrelRotation()
     {
-        
+        var rot = cannonSo.angleInDegrees;
+        barrel.transform.rotation = Quaternion.AngleAxis(rot, Vector3.forward);
     }
 }
